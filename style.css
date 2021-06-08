@@ -1,0 +1,23 @@
+*{box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sector{
+    margin-top: 2%;
+    background: #e9efba;
+    padding: 1em;
+}
+.block {
+   margin: 1%;
+    padding: 1em;
+   background: #97eda7;
+    border: 1px solid #f0e44c;
+}
+p >input::placeholder {
+    opacity: 0.2;
+    color: green;
+}
+button {
+    margin: .3em;
+}
