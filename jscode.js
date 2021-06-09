@@ -53,38 +53,46 @@ function numberCombClear() {
 
 
 function squareArea () {
-    let arr = [];
+    let sqares = 0;
     let userValue7 = document.getElementById(`n7`).value;
     let userValue8 = document.getElementById(`n8`).value;
-    arr.push(userValue7,userValue8);
-    
     let out4 = document.querySelector(`#out4`);
+    if (userValue7 === 0 || userValue8 === 0){
+        userValue7 === 0 ? sqares = Math.pow (userValue8, 2) : sqares = Math.pow (userValue7, 2);
+    }
+    else sqares = userValue7 * userValue8
+    document.getElementById(`out4`).innerHTML += sqares;
+
 }
 function squareAreaClear() {
-    document.getElementById(`n5`).value = "";
-    document.getElementById(`n6`).value = "";
-    document.getElementById(`out3`).innerHTML = '';
+    document.getElementById(`n7`).value = "";
+    document.getElementById(`n8`).value = "";
+    document.getElementById(`out4`).innerHTML = '';
 }
-function perfectNumber(){
-    let i = 1, num = 0;
-    let arr = [];
+
+function perfectNumber() {
     let out5 = document.querySelector(`#out5`);
     let userValue9 = document.getElementById(`n9`).value;
-    while (i < userValue9){
-    num = userValue9 % i;
-    num === 0 ? arr[i-1] = num && i++ : i++;
+    let i = 0, sum = 0;
+    let arr = [];
+    while (i < userValue9) {
+        userValue9 % (i) === 0 ? arr[i] = userValue9 / (i) && i++ : i++
     }
-    document.getElementById(`out5`).innerHTML += arr;
+    let arr2 = arr.filter(element => element !== null)
+    console.log(arr2)
+    function sumArr(arr){
+    for(let i = 0; i < arr.length; i++) {
+           sum += arr[i];
+        }
+        console.log(sum)
+       return sum;
     }
-       /* let digits = userValue9.toString().split(``).map(Number).reverse().join(``);*/
-
-
+    sumArr(arr2)  == userValue9 ? document.getElementById(`out5`).innerHTML += `Число совершенное` : document.getElementById(`out5`).innerHTML += `Число несовершенное`
+}
 function perfectNumberClear() {
     document.getElementById(`n9`).value = "";
     document.getElementById(`out5`).innerHTML = '';
 }
-
-
 
 /*function sumRow(){
     let out5 = document.querySelector(`#out5`);
