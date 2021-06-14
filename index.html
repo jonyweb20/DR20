@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="jscode.js"></script>
-    <title>DZ19</title>
+    <title>DZ20</title>
 </head>
 <body>
    <div class="block">
@@ -61,14 +61,64 @@
        <p id="out5">Результат: </p>
    </div>
 
- <!--  <div class="block">
-       <h2>Задание №5</h2>
-       <h3>Выводит количество вложенных пар круглых скобок, в зависимости от введеного числа</h3>
-       <p>Ввести число: <label for="n6"></label><input type="text" placeholder="Введите число" id="n6"></p>
-       <button onclick="roundBracket()">Показать</button>
-       <button onclick="roundBracketClear()">Сбросить</button>
+   <div class="block">
+       <h2>Задание №6</h2>
+       <h3>Выводит совершенные числа из указанного диапазона</h3>
+       <p>Ввести число: <label for="n10"></label><input type="text" placeholder="Введите начало диапазона" id="n10"></p>
+       <p>Ввести число: <label for="n11"></label><input type="text" placeholder="Введите конец диапазона" id="n11"></p>
+       <button onclick="perfectNumberRange()">Показать</button>
+       <button onclick="perfectNumberRangeClear()">Сбросить</button>
        <hr>
-       <p id="out6">Результат: </p>-->
-   </div>-->
+       <p id="out6">Результат: </p>
+   </div>
+
+   <div class="block">
+       <h2>Задание №7</h2>
+       <h3>Выводит на экран внесеное время в формате "чч:мм:сс"</h3>
+       <p>Введите время в часах: <label for="n12"></label><input type="text" placeholder="Введите время в часах" id="n12"></p>
+       <p>Введите время в минутах: <label for="n13"></label><input type="text" placeholder="Введите время в минутах" id="n13"></p>
+       <p>Введите время в секундах: <label for="n14"></label><input type="text" placeholder="Введите время в секундах" id="n14"></p>
+       <button onclick="timeEnter()">Показать</button>
+       <button onclick="timeEnterClear()">Сбросить</button>
+       <hr>
+       <p id="out7">Введеное время: </p>
+   </div>
+   <div class="block">
+       <h2>Задание №8</h2>
+       <h3>Выводит на экран внесеное время в секундах"</h3>
+       <p>Введите время в часах (от 0 до 23): <label for="n15"></label><input type="text" placeholder="Введите время в часах" id="n15"></p>
+       <p>Введите время в минутах (от 0 до 59): <label for="n16"></label><input type="text" placeholder="Введите время в минутах" id="n16"></p>
+       <p>Введите время в секундах (от 0 до 59): <label for="n17"></label><input type="text" placeholder="Введите время в секундах" id="n17"></p>
+       <button onclick="timeOutSec()">Показать</button>
+       <button onclick="timeOutSecClear()">Сбросить</button>
+       <hr>
+       <p id="out8">Результат: </p>
+   </div>
+
+   <div class="block">
+       <h2>Задание №9</h2>
+       <h3>Выводит на экран внесеное время (в секундах) в формате "чч:мм:сс""</h3>
+       <p>Введите время в секундах: <label for="n18"></label><input type="text" placeholder="Введите время в часах" id="n18"></p>
+       <button onclick="timeOutAll()">Показать</button>
+       <button onclick="timeOutAllClear()">Сбросить</button>
+       <hr>
+       <p id="out9">Результат: </p>
+   </div>
+
+   <div class="block">
+       <h2>Задание №10</h2>
+       <h3>Выводит на экран разницу времени между двумя внесеными датами в формате "чч:мм:сс"</h3>
+       <p class="paragrach">Введите год начала периода в формате "гггг": <label for="n19"></label><input type="text" placeholder="Введите время в годах" id="n19"></p>
+       <p class="paragrach">Введите месяц начала периода в формате "мм": <label for="n20"></label><input type="text" placeholder="Введите время в месяцах от 0 до 11" id="n20"></p>
+       <p class="paragrach">Введите число начала периода в формате "чч": <label for="n21"></label><input type="text" placeholder="Введите время в числах от 1до 31" id="n21"></p>
+
+       <p>Введите год конца периода в формате "гггг": <label for="n22"></label><input type="text" placeholder="Введите время в годах" id="n22"></p>
+       <p>Введите месяц конца периода в формате "мм": <label for="n23"></label><input type="text" placeholder="Введите время в месяцах от 0 до 11" id="n23"></p>
+       <p>Введите число конца периода в формате "чч": <label for="n24"></label><input type="text" placeholder="Введите время в числах от 1до 31" id="n24"></p>
+       <button onclick="timeOutRangeAll()">Показать</button>
+       <button onclick="timeOutRangeAllClear()">Сбросить</button>
+       <hr>
+       <p id="out10">Результат: </p>
+   </div>
 </body>
 </html>

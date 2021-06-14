@@ -18,6 +18,13 @@ p >input::placeholder {
     opacity: 0.2;
     color: green;
 }
+p{
+    margin: 1em;
+}
+.paragrach{
+    font-family: cursive;
+    font-weight: bold;
+}
 button {
     margin: .3em;
 }
